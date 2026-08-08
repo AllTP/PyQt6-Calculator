@@ -70,6 +70,38 @@ class mainWindow(QWidget):
 
             grid.addWidget(button, row, column)
 
+        # Стиль окна и кнопок
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #303134;
+            }
+
+            QLineEdit {
+                background-color: #202124;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            QPushButton {
+                background-color: #3c4043;
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+
+            QPushButton:hover {
+                background-color: #5f6368;
+            }
+
+            QPushButton:pressed {
+                background-color: #8ab4f8;
+                color: black;
+            }
+        """)
+
+
     def setUpMainWindow(self):
         pass
 
